@@ -47,6 +47,8 @@ module.exports = class extends BaseGenerator {
 
         fs.writeFileSync(packagePath, nodeJson);
 
+        this._generateAndCopy('README.md', { name: name, organization: this.options.organization, yocommand: this.strings.filize(this.options.name, '.') });
+
         this._copy('.gitignore');
 
         this._copy('.vscode/settings.json');
