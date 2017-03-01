@@ -1,0 +1,25 @@
+{
+  "name": "generator-corpcode",
+  "description": "Corporate code generator",
+  "author": "Eric Swanson <ericis@users.noreply.github.com>",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --watch",
+    "test:once": "mocha"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "yeoman-test": "^1.6.0"
+  }
+}

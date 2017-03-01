@@ -1,0 +1,6 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: local-user
+    password: local-password

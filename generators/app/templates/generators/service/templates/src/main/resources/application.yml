@@ -1,0 +1,9 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: <%= name %>
+
+logging:
+  level:
+    ROOT: INFO

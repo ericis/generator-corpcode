@@ -1,0 +1,11 @@
+applications:
+- buildpack: liberty-for-java
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: <%= name %>
+  host: <%= name %>
+  disk_quota: 1024M
+  path: build/libs/<%= name %>-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: bluemix
