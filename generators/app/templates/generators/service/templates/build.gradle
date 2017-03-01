@@ -40,7 +40,7 @@ sourceSets {
 
 dependencies {
 	// health and metrics
-	compile('org.springframework.boot:spring-boot-starter-actuator')<%= if (security) { %>
+	compile('org.springframework.boot:spring-boot-starter-actuator')<% if (security) { %>
 
 	// security
 	compile('org.springframework.boot:spring-boot-starter-security')<% } %>

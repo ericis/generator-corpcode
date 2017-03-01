@@ -77,6 +77,9 @@ module.exports = class extends BaseGenerator {
         this._copy('generators/service/templates/src/main/java/com/example/service/models/GreetingModel.java');
         this._copy('generators/service/templates/src/test/java/com/example/service/ExampleServiceTests.java');
         this._copy('generators/service/templates/src/test/java/com/example/service/controllers/ExampleControllerTests.java');
+        this._copy('generators/service/templates/src/main/resources/application.yml');
+        this._copy('generators/service/templates/src/main/resources/application-local.yml');
+        this._copy('generators/service/templates/src/main/resources/application-integration.yml');
     }
 
     _copy(options) {
